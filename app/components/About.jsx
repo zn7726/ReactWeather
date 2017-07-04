@@ -1,5 +1,5 @@
 var React = require('react');
-// 
+//
 // var About = React.createClass({
 //
 //   render: function() {
@@ -12,7 +12,19 @@ var React = require('react');
 
 var About = (props) => {
   return (
-    <h3>About Component</h3>
+    <div>
+      <h1 className="text-center">About</h1>
+      <p>this is a weather application built on React.</p>
+      <p>Here are some of the tools I used:</p>
+      <ul>
+        <li>
+          <a href="https://facebook.github.io/react">React</a> - This was the JavaScript Framework used.
+        </li>
+        <li>
+          <a href="https://openweathermap.org">Open Weather Map</a> - Used to search for weather data by city name.
+        </li>
+      </ul>git
+    </div>
   )
 };
 
