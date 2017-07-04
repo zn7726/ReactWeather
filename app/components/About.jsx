@@ -23,7 +23,7 @@ var About = (props) => {
         <li>
           <a href="https://openweathermap.org">Open Weather Map</a> - Used to search for weather data by city name.
         </li>
-      </ul>git
+      </ul>
     </div>
   )
 };

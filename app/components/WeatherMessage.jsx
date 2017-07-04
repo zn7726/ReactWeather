@@ -19,7 +19,7 @@ var WeatherMessage = ({temp, location}) =>{
   return (
     <div>
       {/*<h3>{props.location} temp is {props.temp}</h3>*/}
-      <h3>{location} temp is {temp}</h3>
+      <h3 className="text-center">{location} temp is {temp}</h3>
     </div>
   )
 };
