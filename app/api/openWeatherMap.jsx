@@ -9,18 +9,18 @@ module.exports = {
     console.log(requestUrl);
 
     return axios.get(requestUrl)
-                .then(function(res){
-                  console.log(res);
-                  if(res.data.cod && res.data.message) {
-                    console.log('throwing error');
-                    throw new Error(res.data.message);
-                  } else {
-                    return res.data.main.temp;
-                  }
-                },
-                function(res){
-                  console.log('throwing error');
-                  throw new Error(res.data.message);
-                });
+          .then(function(res){
+            console.log(res);
+            if(res.data.cod && res.data.message) {
+              console.log('throwing error');
+              throw new Error(res.data.message);
+            } else {
+              return res.data.main.temp;
+            }
+          },
+          function(res){
+            console.log('throwing error');
+            throw new Error(res.data.message);
+          });
   }
 }
