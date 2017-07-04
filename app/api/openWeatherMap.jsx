@@ -10,7 +10,7 @@ module.exports = {
 
     return axios.get(requestUrl)
           .then(function(res){
-            console.log(res);
+            debugger;
             if(res.data.cod && res.data.message) {
               console.log('throwing error');
               throw new Error(res.data.message);
@@ -19,8 +19,9 @@ module.exports = {
             }
           },
           function(res){
+            debugger;
             console.log('throwing error');
-            throw new Error(res.data.message);
+            throw new Error(res.response.data.message);
           });
   }
 }
